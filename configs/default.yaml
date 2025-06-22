@@ -1,0 +1,7 @@
+model:
+  num_classes: 80
+  num_queries: 100
+train:
+  batch_size: 2
+  epochs: 1
+  lr: 0.0001

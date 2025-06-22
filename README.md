@@ -21,3 +21,12 @@ python scripts/train.py --config configs/default.yaml
 ```
 
 This script uses a dummy dataset and runs for one epoch. Customize the dataset and configuration for real training.
+
+Run the example dashboard (requires `opencv-python`, `Pillow`, and `torch`).
+The dashboard uses a tiny RTDETR model with random weights to demonstrate
+integration with the detection logic. Bounding boxes are drawn on the captured
+image to show example detections:
+```bash
+pip install opencv-python pillow torch
+python scripts/dashboard.py
+```
